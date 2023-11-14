@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator-screen" id="output">0</div>
+            <div class="calculator-body">
+                <div class="row">
+                    <div class="col"><button class="btn btn-light btn-block" onclick="clearOutput()">C</button></div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('/')">/</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('*')">*</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block"
+                            onclick="deleteLastCharacter()">DEL</button></div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('7')">7</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('8')">8</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('9')">9</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('-')">-</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('4')">4</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('5')">5</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('6')">6</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('+')">+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('1')">1</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('2')">2</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('3')">3</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="calculate()">=</button></div>
+                </div>
+                <div class="row">
+                    <div class="col-8"><button class="btn btn-light btn-block" onclick="appendToOutput('0')">0</button>
+                    </div>
+                    <div class="col"><button class="btn btn-light btn-block" onclick="appendToOutput('.')">.</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agrega los enlaces a los archivos de Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>
